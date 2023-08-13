@@ -9,7 +9,7 @@ const Greeting = () => {
   return (
     <div>
       <h2>Hello world</h2>
-      {changeText ? <p>It's good today</p> : <p>Change!</p>}
+      {!changeText ? <p>It's good today</p> : <p>Change!</p>}
       <button onClick={() => textChangeHandler()}>Change text</button>
     </div>
   );
